@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | YuvaRise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">YuvaRise</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book.html">Book</a>
+            <a href="seven-habits.html">7 Habits</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="career-zone.html">Career Zone</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- Registration Section -->
+    <main>
+
+        <section class="contact-form-container">
+
+            <div class="section-heading">
+
+                <span class="hero-tag">JOIN YUVARISE</span>
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Register with YuvaRise and start your learning,
+                    personal growth and goal-setting journey.
+                </p>
+
+            </div>
+
+
+            <!-- Registration Form -->
+            <form id="registerForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Terms -->
+                <div class="form-group">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        I agree to the terms and conditions.
+
+                    </label>
+
+                </div>
+
+
+                <!-- Register Button -->
+                <button type="submit" class="primary-btn">
+                    Create Account
+                </button>
+
+
+                <!-- Message -->
+                <p id="registerMessage"></p>
+
+            </form>
+
+
+            <!-- Login Link -->
+            <div class="login-register-link">
+
+                <p>
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>YuvaRise</h3>
+
+                <p>
+                    Helping young people learn, grow, build confidence and
+                    prepare for a better future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="book.html">Book</a>
+                <a href="student-zone.html">Student Zone</a>
+                <a href="career-zone.html">Career Zone</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Growth</h3>
+
+                <a href="motivation.html">Motivation</a>
+                <a href="confidence-zone.html">Confidence</a>
+                <a href="goal-planner.html">Goal Planner</a>
+                <a href="daily-challenge.html">Daily Challenge</a>
+                <a href="progress.html">Progress</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YuvaRise. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Registration JavaScript -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const registerForm = document.getElementById("registerForm");
+            const registerMessage = document.getElementById("registerMessage");
+
+            registerForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const fullName =
+                    document.getElementById("fullName").value.trim();
+
+                const email =
+                    document.getElementById("email").value.trim();
+
+                const password =
+                    document.getElementById("password").value;
+
+                const confirmPassword =
+                    document.getElementById("confirmPassword").value;
+
+                const terms =
+                    document.getElementById("terms").checked;
+
+
+                if (!fullName || !email || !password || !confirmPassword) {
+
+                    registerMessage.textContent =
+                        "Please fill in all the required fields.";
+
+                    return;
+                }
+
+
+                if (password.length < 6) {
+
+                    registerMessage.textContent =
+                        "Password must contain at least 6 characters.";
+
+                    return;
+                }
+
+
+                if (password !== confirmPassword) {
+
+                    registerMessage.textContent =
+                        "Passwords do not match.";
+
+                    return;
+                }
+
+
+                if (!terms) {
+
+                    registerMessage.textContent =
+                        "Please agree to the terms and conditions.";
+
+                    return;
+                }
+
+
+                registerMessage.textContent =
+                    "🎉 Registration successful! Welcome to YuvaRise.";
+
+                registerMessage.style.marginTop = "15px";
+                registerMessage.style.fontWeight = "600";
+
+                registerForm.reset();
+
+            });
+
+        });
+
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

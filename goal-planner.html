@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Goal Planner | YuvaRise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">YuvaRise</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book.html">Book</a>
+            <a href="seven-habits.html">7 Habits</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="career-zone.html">Career Zone</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">GOAL PLANNER</span>
+
+            <h1>
+                Plan Your Goals,
+                <span>Build Your Future</span>
+            </h1>
+
+            <p>
+                Turn your ideas into clear goals. Break big
+                dreams into small steps, stay focused and
+                track your progress with YuvaRise.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#planner" class="primary-btn">
+                    Create a Goal
+                </a>
+
+                <a href="progress.html" class="secondary-btn">
+                    View Progress
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="images/student.jpg" alt="Student Planning Goals">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <span>SET YOUR DIRECTION</span>
+
+            <h2>
+                Why Goal Planning Matters
+            </h2>
+
+            <p>
+                A goal gives you a clear direction. A plan helps
+                you decide what to do next. Start with one goal,
+                divide it into manageable steps and keep moving
+                forward.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GOAL PLANNER ================= -->
+    <section class="feature-section" id="planner">
+
+        <div class="section-heading">
+
+            <span>CREATE YOUR PLAN</span>
+
+            <h2>
+                My Goal Planner
+            </h2>
+
+            <p>
+                Fill in the details below to create a simple
+                action plan.
+            </p>
+
+        </div>
+
+
+        <div class="contact-form-container">
+
+            <form id="goalForm">
+
+                <!-- GOAL -->
+                <div class="form-group">
+
+                    <label for="goal">
+                        What is your goal?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="goal"
+                        name="goal"
+                        placeholder="Example: Improve my programming skills"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+                <div class="form-group">
+
+                    <label for="category">
+                        Goal Category
+                    </label>
+
+                    <select id="category" name="category" required>
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="study">
+                            Study
+                        </option>
+
+                        <option value="career">
+                            Career
+                        </option>
+
+                        <option value="skills">
+                            Skills
+                        </option>
+
+                        <option value="personal">
+                            Personal Growth
+                        </option>
+
+                        <option value="habits">
+                            Habits
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DEADLINE -->
+                <div class="form-group">
+
+                    <label for="deadline">
+                        Target Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="deadline"
+                        name="deadline"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- FIRST STEP -->
+                <div class="form-group">
+
+                    <label for="firstStep">
+                        What is your first step?
+                    </label>
+
+                    <textarea
+                        id="firstStep"
+                        name="firstStep"
+                        rows="4"
+                        placeholder="Write the first action you will take..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- MOTIVATION -->
+                <div class="form-group">
+
+                    <label for="motivation">
+                        Why is this goal important to you?
+                    </label>
+
+                    <textarea
+                        id="motivation"
+                        name="motivation"
+                        rows="4"
+                        placeholder="Write your reason..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="primary-btn">
+                    Create My Goal
+                </button>
+
+                <p id="goalMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GOAL STEPS ================= -->
+    <section class="zones-section">
+
+        <div class="section-heading">
+
+            <span>GOAL ROADMAP</span>
+
+            <h2>
+                6 Simple Steps to Achieve Your Goal
+            </h2>
+
+        </div>
+
+
+        <div class="zones-grid">
+
+            <!-- STEP 1 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    🎯
+                </div>
+
+                <h3>Choose Your Goal</h3>
+
+                <p>
+                    Decide exactly what you want to achieve
+                    and make your goal clear.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    📝
+                </div>
+
+                <h3>Write It Down</h3>
+
+                <p>
+                    Writing your goal can help you remember
+                    what you are working towards.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    🧩
+                </div>
+
+                <h3>Break It Into Steps</h3>
+
+                <p>
+                    Divide a large goal into smaller actions
+                    that are easier to manage.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    ⏰
+                </div>
+
+                <h3>Set a Timeline</h3>
+
+                <p>
+                    Give yourself a realistic target date
+                    and organize your tasks.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 5 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    🚀
+                </div>
+
+                <h3>Take Action</h3>
+
+                <p>
+                    Start with the first small step and
+                    continue working consistently.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 6 -->
+            <div class="zone-card">
+
+                <div class="zone-icon">
+                    📈
+                </div>
+
+                <h3>Track Progress</h3>
+
+                <p>
+                    Check your progress regularly and
+                    adjust your plan when necessary.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GOAL TYPES ================= -->
+    <section class="feature-section">
+
+        <div class="section-heading">
+
+            <span>CHOOSE YOUR FOCUS</span>
+
+            <h2>
+                What Kind of Goal Do You Want to Set?
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <!-- STUDY -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>Study Goals</h3>
+
+                <p>
+                    Set goals for subjects, assignments,
+                    exams and learning new concepts.
+                </p>
+
+                <a href="student-zone.html">
+                    Student Zone →
+                </a>
+
+            </div>
+
+
+            <!-- CAREER -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💼
+                </div>
+
+                <h3>Career Goals</h3>
+
+                <p>
+                    Plan the skills, education and experiences
+                    you want to develop for your future career.
+                </p>
+
+                <a href="career-zone.html">
+                    Career Zone →
+                </a>
+
+            </div>
+
+
+            <!-- PERSONAL -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌱
+                </div>
+
+                <h3>Personal Growth</h3>
+
+                <p>
+                    Work on confidence, communication,
+                    habits and personal development.
+                </p>
+
+                <a href="confidence-zone.html">
+                    Confidence Zone →
+                </a>
+
+            </div>
+
+
+            <!-- HABITS -->
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ⭐
+                </div>
+
+                <h3>Habit Goals</h3>
+
+                <p>
+                    Build positive routines by practicing
+                    useful habits consistently.
+                </p>
+
+                <a href="seven-habits.html">
+                    Explore 7 Habits →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SMART GOALS ================= -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <span>MAKE YOUR GOAL CLEAR</span>
+
+            <h2>
+                A Good Goal Should Be Specific
+            </h2>
+
+            <p>
+                Instead of saying "I want to study more,"
+                make your goal more specific, such as
+                "I will study one topic for 45 minutes
+                each evening."
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>Be Specific</h3>
+
+                <p>
+                    Clearly state what you want to achieve.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Make It Measurable</h3>
+
+                <p>
+                    Decide how you will know that you are
+                    making progress.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Keep It Realistic</h3>
+
+                <p>
+                    Choose a goal that fits your current
+                    situation and resources.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Set a Deadline</h3>
+
+                <p>
+                    Give yourself a clear target date.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DAILY ACTION ================= -->
+    <section class="challenge-section">
+
+        <div class="challenge-content">
+
+            <span>TAKE ACTION TODAY</span>
+
+            <h2>
+                Start With One Small Step
+            </h2>
+
+            <p>
+                You don't have to complete everything in one
+                day. Choose one useful action and start today.
+            </p>
+
+            <a href="daily-challenge.html" class="primary-btn">
+                Take Daily Challenge
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROGRESS ================= -->
+    <section class="goal-section">
+
+        <div class="goal-content">
+
+            <span>KEEP MOVING</span>
+
+            <h2>
+                Track Your Growth
+            </h2>
+
+            <p>
+                Review what you have completed, identify what
+                needs improvement and continue working towards
+                your goal.
+            </p>
+
+            <a href="progress.html" class="primary-btn">
+                View My Progress
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <h2>
+                Your Future Starts With One Goal
+            </h2>
+
+            <p>
+                Choose your goal, make your plan and take
+                your first step today.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#planner" class="primary-btn">
+                    Create My Goal
+                </a>
+
+                <a href="daily-challenge.html" class="secondary-btn">
+                    Daily Challenge
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- COLUMN 1 -->
+            <div class="footer-column">
+
+                <h3>YuvaRise</h3>
+
+                <p>
+                    Empowering young minds to learn,
+                    grow and build a better future.
+                </p>
+
+            </div>
+
+
+            <!-- COLUMN 2 -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="book.html">Book</a>
+                <a href="seven-habits.html">7 Habits</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <!-- COLUMN 3 -->
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="student-zone.html">Student Zone</a>
+                <a href="career-zone.html">Career Zone</a>
+                <a href="confidence-zone.html">Confidence Zone</a>
+                <a href="decision-guide.html">Decision Guide</a>
+                <a href="activities.html">Activities</a>
+
+            </div>
+
+
+            <!-- COLUMN 4 -->
+            <div class="footer-column">
+
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="progress.html">Progress</a>
+                <a href="quiz.html">Quiz</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YuvaRise. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const goalForm = document.getElementById("goalForm");
+            const goalMessage = document.getElementById("goalMessage");
+
+            if (goalForm) {
+
+                goalForm.addEventListener("submit", function (event) {
+
+                    event.preventDefault();
+
+                    const goal = document.getElementById("goal").value.trim();
+
+                    if (goal !== "") {
+
+                        goalMessage.textContent =
+                            "🎯 Great! Your goal has been created. Keep taking small steps towards it!";
+
+                        goalMessage.style.marginTop = "15px";
+                        goalMessage.style.fontWeight = "600";
+
+                        goalForm.reset();
+
+                    }
+
+                });
+
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | YuvaRise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">YuvaRise</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book.html">Book</a>
+            <a href="seven-habits.html">7 Habits</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="career-zone.html">Career Zone</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- Login Section -->
+    <main>
+
+        <section class="contact-form-container">
+
+            <div class="section-heading">
+
+                <span class="hero-tag">WELCOME BACK</span>
+
+                <h1>Login to YuvaRise</h1>
+
+                <p>
+                    Login to continue your learning, growth and personal
+                    development journey.
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            name="rememberMe"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Login
+                </button>
+
+
+                <p id="loginMessage"></p>
+
+            </form>
+
+
+            <!-- Register Link -->
+            <div class="login-register-link">
+
+                <p>
+                    Don't have an account?
+                    <a href="register.html">Create an account</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>YuvaRise</h3>
+
+                <p>
+                    Helping young people learn, grow, build confidence and
+                    prepare for a better future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="book.html">Book</a>
+                <a href="student-zone.html">Student Zone</a>
+                <a href="career-zone.html">Career Zone</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Growth</h3>
+
+                <a href="motivation.html">Motivation</a>
+                <a href="confidence-zone.html">Confidence</a>
+                <a href="goal-planner.html">Goal Planner</a>
+                <a href="daily-challenge.html">Daily Challenge</a>
+                <a href="progress.html">Progress</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YuvaRise. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const loginForm = document.getElementById("loginForm");
+            const loginMessage = document.getElementById("loginMessage");
+
+            loginForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const email = document.getElementById("email").value.trim();
+                const password = document.getElementById("password").value.trim();
+
+                if (email === "" || password === "") {
+
+                    loginMessage.textContent =
+                        "Please enter your email and password.";
+
+                    return;
+                }
+
+                loginMessage.textContent =
+                    "Login successful! Welcome back to YuvaRise.";
+
+                loginMessage.style.marginTop = "15px";
+                loginMessage.style.fontWeight = "600";
+
+            });
+
+        });
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

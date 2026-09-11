@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Progress | YuvaRise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">YuvaRise</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book.html">Book</a>
+            <a href="seven-habits.html">7 Habits</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="career-zone.html">Career Zone</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">YOUR JOURNEY</span>
+
+            <h1>Track Your Progress</h1>
+
+            <p>
+                Every small step matters. Track your learning, habits,
+                confidence and goals as you continue your growth journey.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="goal-planner.html" class="primary-btn">
+                    Set a Goal
+                </a>
+
+                <a href="daily-challenge.html" class="secondary-btn">
+                    Daily Challenge
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/student.jpg" alt="Student Progress">
+        </div>
+
+    </section>
+
+
+    <!-- Progress Overview -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">PROGRESS OVERVIEW</span>
+
+            <h2>Your Growth Areas</h2>
+
+            <p>
+                Progress is not only about marks. It also includes your habits,
+                confidence, skills, goals and consistency.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <img src="icons/growth.jpg" alt="Personal Growth">
+                </div>
+
+                <h3>Personal Growth</h3>
+
+                <p>
+                    Work on your mindset, discipline and personal development.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%;"></div>
+                </div>
+
+                <p><strong>65% Completed</strong></p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <img src="icons/motivation.png" alt="Motivation">
+                </div>
+
+                <h3>Motivation</h3>
+
+                <p>
+                    Build consistency and keep taking positive steps every day.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+
+                <p><strong>75% Completed</strong></p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <img src="icons/career.png" alt="Career">
+                </div>
+
+                <h3>Career Planning</h3>
+
+                <p>
+                    Explore career options and understand your future direction.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                </div>
+
+                <p><strong>50% Completed</strong></p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <img src="icons/progress.png" alt="Progress">
+                </div>
+
+                <h3>Goal Progress</h3>
+
+                <p>
+                    Set meaningful goals and take action towards achieving them.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+
+                <p><strong>60% Completed</strong></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Weekly Progress -->
+    <section class="feature-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">WEEKLY CHECK-IN</span>
+
+            <h2>How Was Your Week?</h2>
+
+            <p>
+                Use this simple check-in to reflect on your learning and
+                personal growth.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>📚 Learning</h3>
+
+                <p>
+                    Did you spend enough time learning something useful this
+                    week?
+                </p>
+
+                <button class="primary-btn progress-btn" data-message="Great! Keep learning and improving.">
+                    Mark Complete
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>🎯 Goals</h3>
+
+                <p>
+                    Did you take at least one meaningful step towards your goal?
+                </p>
+
+                <button class="primary-btn progress-btn" data-message="Excellent! Keep moving towards your goal.">
+                    Mark Complete
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>💪 Confidence</h3>
+
+                <p>
+                    Did you try something that helped you become more confident?
+                </p>
+
+                <button class="primary-btn progress-btn" data-message="Well done! Confidence grows through practice.">
+                    Mark Complete
+                </button>
+
+            </div>
+
+        </div>
+
+        <p id="progressMessage"></p>
+
+    </section>
+
+
+    <!-- Progress Tips -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">KEEP IMPROVING</span>
+
+            <h2>Simple Progress Tips</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>01. Be Consistent</h3>
+
+                <p>
+                    Small actions done regularly can create meaningful progress.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>02. Celebrate Small Wins</h3>
+
+                <p>
+                    Appreciate the progress you make instead of waiting only
+                    for the final result.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>03. Learn From Mistakes</h3>
+
+                <p>
+                    Mistakes can help you understand what to improve next.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>04. Review Your Goals</h3>
+
+                <p>
+                    Regularly check your goals and update your next steps when
+                    necessary.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Achievement Section -->
+    <section class="challenge-section">
+
+        <div class="challenge-content">
+
+            <span class="hero-tag">YOUR ACHIEVEMENT</span>
+
+            <h2>Progress Is a Journey</h2>
+
+            <p>
+                You don't need to be perfect. What matters is learning,
+                improving and continuing your journey one step at a time.
+            </p>
+
+            <a href="motivation.html" class="primary-btn">
+                Get Motivation
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Explore More -->
+    <section class="feature-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">EXPLORE MORE</span>
+
+            <h2>Continue Your YuvaRise Journey</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>Goal Planner</h3>
+
+                <p>
+                    Create a goal and decide your next action.
+                </p>
+
+                <a href="goal-planner.html" class="primary-btn">
+                    Plan Goals
+                </a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Motivation</h3>
+
+                <p>
+                    Find simple ideas to stay motivated and consistent.
+                </p>
+
+                <a href="motivation.html" class="primary-btn">
+                    Get Inspired
+                </a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Daily Challenge</h3>
+
+                <p>
+                    Complete a small challenge and build positive habits.
+                </p>
+
+                <a href="daily-challenge.html" class="primary-btn">
+                    Take Challenge
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <h2>Keep Going. Keep Growing.</h2>
+
+            <p>
+                Your progress may be small today, but every step can bring you
+                closer to your goals.
+            </p>
+
+            <a href="goal-planner.html" class="primary-btn">
+                Start Your Next Step
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>YuvaRise</h3>
+
+                <p>
+                    Helping young people learn, grow, build confidence and
+                    prepare for a better future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="book.html">Book</a>
+                <a href="student-zone.html">Student Zone</a>
+                <a href="career-zone.html">Career Zone</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Growth</h3>
+
+                <a href="motivation.html">Motivation</a>
+                <a href="confidence-zone.html">Confidence</a>
+                <a href="goal-planner.html">Goal Planner</a>
+                <a href="daily-challenge.html">Daily Challenge</a>
+                <a href="progress.html">Progress</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YuvaRise. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Page JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const buttons = document.querySelectorAll(".progress-btn");
+            const message = document.getElementById("progressMessage");
+
+            buttons.forEach(function (button) {
+
+                button.addEventListener("click", function () {
+
+                    message.textContent = button.getAttribute("data-message");
+
+                    message.style.marginTop = "20px";
+                    message.style.fontWeight = "600";
+
+                    button.textContent = "Completed ✓";
+                    button.disabled = true;
+
+                });
+
+            });
+
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

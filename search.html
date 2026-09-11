@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search | YuvaRise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">YuvaRise</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="book.html">Book</a>
+            <a href="seven-habits.html">7 Habits</a>
+            <a href="student-zone.html">Student Zone</a>
+            <a href="career-zone.html">Career Zone</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">SEARCH YUVARISE</span>
+
+            <h1>
+                Find What You Need
+            </h1>
+
+            <p>
+                Search YuvaRise for books, habits, career guidance,
+                student resources, motivation, goals, confidence,
+                activities, and more.
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/student.jpg"
+                alt="Student using YuvaRise search">
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH SECTION ================= -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">SEARCH</span>
+
+            <h2>
+                Search YuvaRise
+            </h2>
+
+            <p>
+                Enter a topic below to quickly find the page you are
+                looking for.
+            </p>
+
+        </div>
+
+
+        <div class="contact-form-container">
+
+            <form id="searchForm">
+
+                <div class="form-group">
+
+                    <label for="searchInput">
+                        What are you looking for?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        name="search"
+                        placeholder="Example: career, motivation, habits..."
+                        autocomplete="off"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+                    🔍 Search
+                </button>
+
+            </form>
+
+            <p
+                id="searchMessage"
+                style="text-align:center; margin-top:20px; font-weight:600;">
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH RESULTS ================= -->
+    <section class="zones-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">POPULAR TOPICS</span>
+
+            <h2>
+                Explore YuvaRise
+            </h2>
+
+            <p>
+                You can also directly explore these popular sections.
+            </p>
+
+        </div>
+
+
+        <div class="zones-grid">
+
+
+            <!-- About -->
+            <a href="about.html" class="zone-card">
+
+                <div class="zone-icon">🌱</div>
+
+                <h3>About YuvaRise</h3>
+
+                <p>
+                    Learn about YuvaRise and its purpose.
+                </p>
+
+            </a>
+
+
+            <!-- Book -->
+            <a href="book.html" class="zone-card">
+
+                <div class="zone-icon">📖</div>
+
+                <h3>Book</h3>
+
+                <p>
+                    Explore the featured book and its lessons.
+                </p>
+
+            </a>
+
+
+            <!-- Habits -->
+            <a href="seven-habits.html" class="zone-card">
+
+                <div class="zone-icon">⭐</div>
+
+                <h3>7 Habits</h3>
+
+                <p>
+                    Learn useful habits for personal growth.
+                </p>
+
+            </a>
+
+
+            <!-- Student Zone -->
+            <a href="student-zone.html" class="zone-card">
+
+                <div class="zone-icon">🎓</div>
+
+                <h3>Student Zone</h3>
+
+                <p>
+                    Discover useful resources for students.
+                </p>
+
+            </a>
+
+
+            <!-- Career -->
+            <a href="career-zone.html" class="zone-card">
+
+                <div class="zone-icon">💼</div>
+
+                <h3>Career Zone</h3>
+
+                <p>
+                    Explore careers and future opportunities.
+                </p>
+
+            </a>
+
+
+            <!-- Confidence -->
+            <a href="confidence-zone.html" class="zone-card">
+
+                <div class="zone-icon">💪</div>
+
+                <h3>Confidence Zone</h3>
+
+                <p>
+                    Improve confidence and develop a positive mindset.
+                </p>
+
+            </a>
+
+
+            <!-- Motivation -->
+            <a href="motivation.html" class="zone-card">
+
+                <div class="zone-icon">🔥</div>
+
+                <h3>Motivation</h3>
+
+                <p>
+                    Find motivation to keep moving forward.
+                </p>
+
+            </a>
+
+
+            <!-- Goals -->
+            <a href="goal-planner.html" class="zone-card">
+
+                <div class="zone-icon">🎯</div>
+
+                <h3>Goal Planner</h3>
+
+                <p>
+                    Set goals and create a simple action plan.
+                </p>
+
+            </a>
+
+
+            <!-- Relationships -->
+            <a href="relationships.html" class="zone-card">
+
+                <div class="zone-icon">🤝</div>
+
+                <h3>Relationships</h3>
+
+                <p>
+                    Learn about healthy and meaningful relationships.
+                </p>
+
+            </a>
+
+
+            <!-- Activities -->
+            <a href="activities.html" class="zone-card">
+
+                <div class="zone-icon">🎨</div>
+
+                <h3>Activities</h3>
+
+                <p>
+                    Try activities designed for learning and growth.
+                </p>
+
+            </a>
+
+
+            <!-- Daily Challenge -->
+            <a href="daily-challenge.html" class="zone-card">
+
+                <div class="zone-icon">🏆</div>
+
+                <h3>Daily Challenge</h3>
+
+                <p>
+                    Complete small challenges and build consistency.
+                </p>
+
+            </a>
+
+
+            <!-- Quiz -->
+            <a href="quiz.html" class="zone-card">
+
+                <div class="zone-icon">🧠</div>
+
+                <h3>Quiz</h3>
+
+                <p>
+                    Test your knowledge about personal development.
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH INFORMATION ================= -->
+    <section class="feature-section">
+
+        <div class="section-heading">
+
+            <span class="hero-tag">SEARCH TIPS</span>
+
+            <h2>
+                Try Searching For
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎯</div>
+
+                <h3>Goals</h3>
+
+                <p>
+                    Search for goals, planning, and personal development.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">💼</div>
+
+                <h3>Career</h3>
+
+                <p>
+                    Search for career guidance and future opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📚</div>
+
+                <h3>Study</h3>
+
+                <p>
+                    Search for student resources, habits, and learning.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">💪</div>
+
+                <h3>Confidence</h3>
+
+                <p>
+                    Search for confidence, motivation, and positive thinking.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <h2>
+                Start Your Growth Journey
+            </h2>
+
+            <p>
+                Explore YuvaRise and discover tools that can help
+                you learn, grow, and move toward your goals.
+            </p>
+
+            <a
+                href="student-zone.html"
+                class="primary-btn">
+                Explore Student Zone
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <h3>YuvaRise</h3>
+
+                <p>
+                    Helping young people learn, grow, plan,
+                    and build a better future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="book.html">Book</a>
+                <a href="seven-habits.html">7 Habits</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Growth</h3>
+
+                <a href="confidence-zone.html">Confidence</a>
+                <a href="goal-planner.html">Goal Planner</a>
+                <a href="motivation.html">Motivation</a>
+                <a href="progress.html">Progress</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="student-zone.html">Student Zone</a>
+                <a href="career-zone.html">Career Zone</a>
+                <a href="activities.html">Activities</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YuvaRise. Learn • Grow • Rise.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+
+    <!-- SEARCH FUNCTION -->
+    <script>
+        const searchForm = document.getElementById("searchForm");
+        const searchInput = document.getElementById("searchInput");
+        const searchMessage = document.getElementById("searchMessage");
+
+        const searchPages = {
+            about: "about.html",
+            book: "book.html",
+            habit: "seven-habits.html",
+            habits: "seven-habits.html",
+            student: "student-zone.html",
+            students: "student-zone.html",
+            career: "career-zone.html",
+            careers: "career-zone.html",
+            confidence: "confidence-zone.html",
+            motivation: "motivation.html",
+            goal: "goal-planner.html",
+            goals: "goal-planner.html",
+            relationship: "relationships.html",
+            relationships: "relationships.html",
+            activities: "activities.html",
+            activity: "activities.html",
+            challenge: "daily-challenge.html",
+            challenges: "daily-challenge.html",
+            quiz: "quiz.html",
+            progress: "progress.html",
+            contact: "contact.html",
+            login: "login.html",
+            register: "register.html"
+        };
+
+        searchForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const searchText =
+                searchInput.value.trim().toLowerCase();
+
+            if (searchText === "") {
+                searchMessage.textContent =
+                    "Please enter something to search.";
+
+                return;
+            }
+
+            let foundPage = null;
+
+            for (const keyword in searchPages) {
+
+                if (searchText.includes(keyword)) {
+                    foundPage = searchPages[keyword];
+                    break;
+                }
+            }
+
+            if (foundPage) {
+
+                searchMessage.textContent =
+                    "Opening the relevant YuvaRise page...";
+
+                setTimeout(function() {
+                    window.location.href = foundPage;
+                }, 500);
+
+            } else {
+
+                searchMessage.textContent =
+                    "Sorry, no matching page was found. Try: career, goals, motivation, habits, student, or confidence.";
+
+            }
+
+        });
+    </script>
+
+</body>
+</html>
